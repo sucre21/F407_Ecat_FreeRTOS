@@ -1,6 +1,6 @@
-..\obj\delay.o: ..\SYSTEM\delay\delay.c
-..\obj\delay.o: ..\SYSTEM\delay\delay.h
-..\obj\delay.o: ..\SYSTEM\sys\sys.h
+..\obj\delay.o: ..\SYSTEM\delay.c
+..\obj\delay.o: ..\SYSTEM\delay.h
+..\obj\delay.o: ..\SYSTEM\sys.h
 ..\obj\delay.o: ..\USER\stm32f4xx.h
 ..\obj\delay.o: ..\CORE\core_cm4.h
 ..\obj\delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -39,7 +39,7 @@
 ..\obj\delay.o: ..\FreeRTOS\include\FreeRTOS.h
 ..\obj\delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\delay.o: ..\FreeRTOS\include\FreeRTOSConfig.h
-..\obj\delay.o: ..\SYSTEM\usart\usart.h
+..\obj\delay.o: ..\SYSTEM\usart.h
 ..\obj\delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\delay.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\delay.o: ..\FreeRTOS\include\portable.h

@@ -2,8 +2,16 @@
 #include "delay.h"
 #include "usart.h"
 #include "led.h"
+#include "SPI1.h"
 #include "FreeRTOS.h"
 #include "task.h"
+ #include "el9800hw.h"
+ 
+#include "ecat_def.h"
+
+#include "applInterface.h"
+//#include "el9800appl.h
+
 /************************************************
  ALIENTEK 探索者STM32F407开发板 FreeRTOS实验2-1
  FreeRTOS移植实验-库函数版本
@@ -55,8 +63,16 @@ int main(void)
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);//设置系统中断优先级分组4
 	delay_init(168);		//初始化延时函数
 	uart_init(115200);     	//初始化串口
+	
+	SPI1_GPIO_Init();           //SPI1
+	HW_Init();
+	//Uart_Configuration();
+	
+  
+  
 	LED_Init();		        //初始化LED端口
 	
+	MainInit();//ECAT初始化
 	//创建开始任务
     xTaskCreate((TaskFunction_t )start_task,            //任务函数
                 (const char*    )"start_task",          //任务名称
@@ -65,6 +81,10 @@ int main(void)
                 (UBaseType_t    )START_TASK_PRIO,       //任务优先级
                 (TaskHandle_t*  )&StartTask_Handler);   //任务句柄              
     vTaskStartScheduler();          //开启任务调度
+	  //while(1)
+		//{
+			//
+		//}
 }
  
 //开始任务任务函数
@@ -101,8 +121,9 @@ void led0_task(void *pvParameters)
 {
     while(1)
     {
-        LED0=~LED0;
-        vTaskDelay(500);
+        //LED0=~LED0;
+			  MainLoop();//主循环程序，查询模式未用
+        //vTaskDelay(500);
     }
 }   
 

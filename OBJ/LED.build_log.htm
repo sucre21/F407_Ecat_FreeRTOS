@@ -26,20 +26,254 @@ Project File Date:  12/18/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
-Build target 'FreeRTOS'
-compiling main.c...
+Rebuild target 'FreeRTOS'
 compiling stm32f4xx_it.c...
 compiling system_stm32f4xx.c...
+compiling el9800appl.c...
+..\SYSTEM\sys\sys.h(30): warning:  #47-D: incompatible redefinition of macro "MEM_ADDR" (declared at line 710 of "..\Ethercat\Inc\ecat_def.h")
+  #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\sdoserv.h(618): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO MEM_ADDR      
+ARMEM                aSdoInfoHeader[GET_MEM_SIZE(SDO_INFO_HEADER_BYTE_SIZE)]; /**< \brief SDO Info buffer*/
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\src\el9800appl.c: 1 warning, 9 errors
+compiling foeappl.c...
+compiling coeappl.c...
+..\SYSTEM\sys\sys.h(30): warning:  #47-D: incompatible redefinition of macro "MEM_ADDR" (declared at line 710 of "..\Ethercat\Inc\ecat_def.h")
+  #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\sdoserv.h(618): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO MEM_ADDR      
+ARMEM                aSdoInfoHeader[GET_MEM_SIZE(SDO_INFO_HEADER_BYTE_SIZE)]; /**< \brief SDO Info buffer*/
+..\Ethercat\src\coeappl.c: 1 warning, 5 errors
+compiling ecatappl.c...
+..\SYSTEM\sys\sys.h(30): warning:  #47-D: incompatible redefinition of macro "MEM_ADDR" (declared at line 710 of "..\Ethercat\Inc\ecat_def.h")
+  #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\sdoserv.h(618): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO MEM_ADDR      
+ARMEM                aSdoInfoHeader[GET_MEM_SIZE(SDO_INFO_HEADER_BYTE_SIZE)]; /**< \brief SDO Info buffer*/
+..\Ethercat\src\ecatappl.c(182): error:  #20: identifier "MEM_ADDR" is undefined
+      HW_EscWriteIsr(((MEM_ADDR *) aPdInputData), nEscAddrInputData, nPdInputSize );//?????ýธ?ิช??
+..\Ethercat\src\ecatappl.c(182): error:  #29: expected an expression
+      HW_EscWriteIsr(((MEM_ADDR *) aPdInputData), nEscAddrInputData, nPdInputSize );//?????ýธ?ิช??
+..\Ethercat\src\ecatappl.c(182): error:  #18: expected a ")"
+      HW_EscWriteIsr(((MEM_ADDR *) aPdInputData), nEscAddrInputData, nPdInputSize );//?????ýธ?ิช??
+..\Ethercat\src\ecatappl.c(193): error:  #20: identifier "MEM_ADDR" is undefined
+      HW_EscReadIsr(((MEM_ADDR *)aPdOutputData), nEscAddrOutputData, nPdOutputSize );
+..\Ethercat\src\ecatappl.c(193): error:  #29: expected an expression
+      HW_EscReadIsr(((MEM_ADDR *)aPdOutputData), nEscAddrOutputData, nPdOutputSize );
+..\Ethercat\src\ecatappl.c(193): error:  #18: expected a ")"
+      HW_EscReadIsr(((MEM_ADDR *)aPdOutputData), nEscAddrOutputData, nPdOutputSize );
+..\Ethercat\src\ecatappl.c(319): error:  #20: identifier "MEM_ADDR" is undefined
+              
+W_EscReadWordIsr(u16dummy,nEscAddrOutputData);
+..\Ethercat\src\ecatappl.c(319): error:  #29: expected an expression
+              
+W_EscReadWordIsr(u16dummy,nEscAddrOutputData);
+..\Ethercat\src\ecatappl.c(320): error:  #29: expected an expression
+              
+W_EscReadWordIsr(u16dummy,(nEscAddrOutputData+nPdOutputSize-2));
+..\Ethercat\src\ecatappl.c(364): error:  #20: identifier "MEM_ADDR" is undefined
+              
+W_EscReadWordIsr(u16dummy,nEscAddrOutputData);
+..\Ethercat\src\ecatappl.c(364): error:  #29: expected an expression
+              
+W_EscReadWordIsr(u16dummy,nEscAddrOutputData);
+..\Ethercat\src\ecatappl.c(365): error:  #29: expected an expression
+              
+W_EscReadWordIsr(u16dummy,(nEscAddrOutputData+nPdOutputSize-2));
+..\Ethercat\src\ecatappl.c: 1 warning, 17 errors
+compiling aoeappl.c...
 compiling led.c...
+compiling ADC1.c...
+compiling EXIT.c...
+compiling Timer.c...
+compiling SPI1.c...
+..\SYSTEM\sys\sys.h(30): warning:  #47-D: incompatible redefinition of macro "MEM_ADDR" (declared at line 710 of "..\Ethercat\Inc\ecat_def.h")
+  #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\HARDWARE\SPI\SPI1.c: 1 warning, 4 errors
+compiling usart.c...
+compiling el9800hw.c...
+..\SYSTEM\sys\sys.h(30): warning:  #47-D: incompatible redefinition of macro "MEM_ADDR" (declared at line 710 of "..\Ethercat\Inc\ecat_def.h")
+  #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\src\el9800hw.c(200): error:  #260-D: explicit type is missing ("int" assumed)
+  _FGS(GCP_OFF);
+..\Ethercat\src\el9800hw.c(200): error:  #92: identifier-list parameters may only be used in a function definition
+  _FGS(GCP_OFF);
+..\Ethercat\src\el9800hw.c(201): error:  #20: identifier "FNOSC_PRI" is undefined
+  _FOSCSEL(FNOSC_PRI & IESO_OFF);
+..\Ethercat\src\el9800hw.c(201): error:  #18: expected a ")"
+  _FOSCSEL(FNOSC_PRI & IESO_OFF);
+..\Ethercat\src\el9800hw.c(201): error:  #260-D: explicit type is missing ("int" assumed)
+  _FOSCSEL(FNOSC_PRI & IESO_OFF);
+..\Ethercat\src\el9800hw.c(202): error:  #20: identifier "FCKSM_CSECMD" is undefined
+  _FOSC(FCKSM_CSECMD & OSCIOFNC_ON & POSCMD_HS);
+..\Ethercat\src\el9800hw.c(202): error:  #18: expected a ")"
+  _FOSC(FCKSM_CSECMD & OSCIOFNC_ON & POSCMD_HS);
+..\Ethercat\src\el9800hw.c(202): error:  #260-D: explicit type is missing ("int" assumed)
+  _FOSC(FCKSM_CSECMD & OSCIOFNC_ON & POSCMD_HS);
+..\Ethercat\src\el9800hw.c(203): error:  #260-D: explicit type is missing ("int" assumed)
+  _FWDT(FWDTEN_OFF);
+..\Ethercat\src\el9800hw.c(203): error:  #92: identifier-list parameters may only be used in a function definition
+  _FWDT(FWDTEN_OFF);
+..\Ethercat\src\el9800hw.c(204): error:  #260-D: explicit type is missing ("int" assumed)
+  _FPOR(FPWRT_PWR1);
+..\Ethercat\src\el9800hw.c(204): error:  #92: identifier-list parameters may only be used in a function definition
+  _FPOR(FPWRT_PWR1);
+..\Ethercat\src\el9800hw.c(205): error:  #20: identifier "ICS_PGD3" is undefined
+  _FICD(ICS_PGD3 & JTAGEN_OFF);
+..\Ethercat\src\el9800hw.c(205): error:  #18: expected a ")"
+  _FICD(ICS_PGD3 & JTAGEN_OFF);
+..\Ethercat\src\el9800hw.c(205): error:  #260-D: explicit type is missing ("int" assumed)
+  _FICD(ICS_PGD3 & JTAGEN_OFF);
+..\Ethercat\src\el9800hw.c(239): warning:  #223-D: function "SET_CPU_IPL" declared implicitly
+      
+ISABLE_AL_EVENT_INT;
+..\Ethercat\src\el9800hw.c(241): error:  #20: identifier "_LATB2" is undefined
+      
+ELECT_SPI;
+..\Ethercat\src\el9800hw.c(244): error:  #20: identifier "_SPI1IF" is undefined
+      
+PI1_IF=0;
+..\Ethercat\src\el9800hw.c(249): error:  #20: identifier "SPI1BUF" is undefined
+      
+PI1_BUF = (UINT8) (0x0000 >> 5);
+..\Ethercat\src\el9800hw.c(288): error:  #20: identifier "_LATB2" is undefined
+      
+ESELECT_SPI
+..\Ethercat\src\el9800hw.c(238): warning:  #550-D: variable "EscMbxReadEcatCtrl" was set but never used
+      UINT8            EscMbxReadEcatCtrl;
+..\Ethercat\src\el9800hw.c(304): error:  #20: identifier "_LATB2" is undefined
+      
+ESELECT_SPI
+..\Ethercat\src\el9800hw.c(307): error:  #20: identifier "_LATB2" is undefined
+      
+ELECT_SPI;
+..\Ethercat\src\el9800hw.c(309): error:  #20: identifier "_SPI1IF" is undefined
+      
+PI1_IF=0;
+..\Ethercat\src\el9800hw.c: 3 warnings, 30 errors
 compiling delay.c...
 compiling sys.c...
-compiling usart.c...
 assembling startup_stm32f40_41xxx.s...
 compiling misc.c...
 compiling stm32f4xx_gpio.c...
 compiling stm32f4xx_rcc.c...
 compiling stm32f4xx_syscfg.c...
 compiling stm32f4xx_usart.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_crc.c...
+compiling stm32f4xx_cryp.c...
+compiling stm32f4xx_cryp_aes.c...
+compiling stm32f4xx_cryp_des.c...
+compiling stm32f4xx_cryp_tdes.c...
+compiling stm32f4xx_dac.c...
+compiling stm32f4xx_dbgmcu.c...
+compiling stm32f4xx_dcmi.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_dma2d.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_flash_ramfunc.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_hash.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_iwdg.c...
+compiling stm32f4xx_ltdc.c...
+compiling stm32f4xx_pwr.c...
+compiling stm32f4xx_rng.c...
+compiling stm32f4xx_rtc.c...
+compiling stm32f4xx_sai.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_wwdg.c...
 compiling croutine.c...
 compiling event_groups.c...
 compiling list.c...
@@ -48,16 +282,246 @@ compiling tasks.c...
 compiling timers.c...
 compiling port.c...
 compiling heap_4.c...
-linking...
-Program Size: Code=14924 RO-data=600 RW-data=184 ZI-data=23160  
-FromELF: creating hex file...
-"..\OBJ\LED.axf" - 0 Error(s), 0 Warning(s).
+compiling bootmode.c...
+compiling diag.c...
+compiling ecataoe.c...
+compiling ecatcoe.c...
+compiling ecateoe.c...
+compiling ecatfoe.c...
+compiling ecatslv.c...
+..\SYSTEM\sys\sys.h(30): warning:  #47-D: incompatible redefinition of macro "MEM_ADDR" (declared at line 710 of "..\Ethercat\Inc\ecat_def.h")
+  #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\sdoserv.h(618): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO MEM_ADDR      
+ARMEM                aSdoInfoHeader[GET_MEM_SIZE(SDO_INFO_HEADER_BYTE_SIZE)]; /**< \brief SDO Info buffer*/
+..\Ethercat\src\ecatslv.c(233): error:  #20: identifier "MEM_ADDR" is undefined
+      
+W_EscReadWord(mask, ESC_AL_EVENTMASK_OFFSET);
+..\Ethercat\src\ecatslv.c(233): error:  #29: expected an expression
+      
+W_EscReadWord(mask, ESC_AL_EVENTMASK_OFFSET);
+..\Ethercat\src\ecatslv.c(240): error:  #29: expected an expression
+      
+W_EscWriteWord(mask, ESC_AL_EVENTMASK_OFFSET);
+..\Ethercat\src\ecatslv.c(253): error:  #20: identifier "MEM_ADDR" is undefined
+      
+W_EscReadWord(mask, ESC_AL_EVENTMASK_OFFSET);
+..\Ethercat\src\ecatslv.c(253): error:  #29: expected an expression
+      
+W_EscReadWord(mask, ESC_AL_EVENTMASK_OFFSET);
+..\Ethercat\src\ecatslv.c(260): error:  #29: expected an expression
+      
+W_EscWriteWord(mask, ESC_AL_EVENTMASK_OFFSET);
+..\Ethercat\src\ecatslv.c(275): error:  #20: identifier "MEM_ADDR" is undefined
+         
+W_EscReadWord(TmpVar, ESC_EEPROM_CONTROL_OFFSET);
+..\Ethercat\src\ecatslv.c(275): error:  #29: expected an expression
+         
+W_EscReadWord(TmpVar, ESC_EEPROM_CONTROL_OFFSET);
+..\Ethercat\src\ecatslv.c(310): error:  #20: identifier "MEM_ADDR" is undefined
+      HW_EscRead((MEM_ADDR *)&SyncManInfo, ESC_SYNCMAN_REG_OFFSET + (channel * SIZEOF_SM_REGISTER), SIZEOF_SM_REGISTER );
+..\Ethercat\src\ecatslv.c(310): error:  #29: expected an expression
+      HW_EscRead((MEM_ADDR *)&SyncManInfo, ESC_SYNCMAN_REG_OFFSET + (channel * SIZEOF_SM_REGISTER), SIZEOF_SM_REGISTER );
+..\Ethercat\src\ecatslv.c(310): error:  #31: expression must have integral type
+      HW_EscRead((MEM_ADDR *)&SyncManInfo, ESC_SYNCMAN_REG_OFFSET + (channel * SIZEOF_SM_REGISTER), SIZEOF_SM_REGISTER );
+..\Ethercat\src\ecatslv.c(330): error:  #20: identifier "MEM_ADDR" is undefined
+      
+W_EscWriteWord(smStatus,Offset);
+..\Ethercat\src\ecatslv.c(330): error:  #29: expected an expression
+      
+W_EscWriteWord(smStatus,Offset);
+..\Ethercat\src\ecatslv.c(335): error:  #29: expected an expression
+          
+W_EscReadWord(smStatus, Offset);
+..\Ethercat\src\ecatslv.c(353): error:  #20: identifier "MEM_ADDR" is undefined
+      
+W_EscWriteWord(smStatus,Offset);
+..\Ethercat\src\ecatslv.c(353): error:  #29: expected an expression
+      
+W_EscWriteWord(smStatus,Offset);
+..\Ethercat\src\ecatslv.c(358): error:  #29: expected an expression
+          
+W_EscReadWord(smStatus,Offset);
+..\Ethercat\src\ecatslv.c(732): error:  #20: identifier "MEM_ADDR" is undefined
+      
+W_EscReadWord(dcControl, ESC_DC_UNIT_CONTROL_OFFSET);
+..\Ethercat\src\ecatslv.c(732): error:  #29: expected an expression
+      
+W_EscReadWord(dcControl, ESC_DC_UNIT_CONTROL_OFFSET);
+..\Ethercat\src\ecatslv.c(736): error:  #29: expected an expression
+          
+W_EscReadDWord(cycleTimeSync0, ESC_DC_SYNC0_CYCLETIME_OFFSET);
+..\Ethercat\src\ecatslv.c(740): error:  #29: expected an expression
+          
+W_EscReadDWord(cycleTimeSync1, ESC_DC_SYNC1_CYCLETIME_OFFSET);
+..\Ethercat\src\ecatslv.c(1043): error:  #29: expected an expression
+      
+W_EscReadWord(wd, ESC_PD_WD_TIME);
+..\Ethercat\src\ecatslv.c(1050): error:  #29: expected an expression
+      
+W_EscReadWord(wdiv, ESC_WD_DIVIDER_OFFSET);
+..\Ethercat\src\ecatslv.c(1331): error:  #20: identifier "MEM_ADDR" is undefined
+          
+W_EscWriteWord(Value,ESC_AL_STATUS_CODE_OFFSET);
+..\Ethercat\src\ecatslv.c(1331): error:  #29: expected an expression
+          
+W_EscWriteWord(Value,ESC_AL_STATUS_CODE_OFFSET);
+..\Ethercat\src\ecatslv.c: 1 warning, 30 errors
+compiling ecatsoe.c...
+compiling emcy.c...
+compiling eoeappl.c...
+compiling fc1100hw.c...
+compiling mailbox.c...
+..\SYSTEM\sys\sys.h(30): warning:  #47-D: incompatible redefinition of macro "MEM_ADDR" (declared at line 710 of "..\Ethercat\Inc\ecat_def.h")
+  #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\src\mailbox.c(260): error:  #20: identifier "MEM_ADDR" is undefined
+          
+W_EscReadWord(sm1Activate,(ESC_SYNCMAN_ACTIVE_OFFSET + SIZEOF_SM_REGISTER));
+..\Ethercat\src\mailbox.c(260): error:  #29: expected an expression
+          
+W_EscReadWord(sm1Activate,(ESC_SYNCMAN_ACTIVE_OFFSET + SIZEOF_SM_REGISTER));
+..\Ethercat\src\mailbox.c(262): error:  #29: expected an expression
+          
+W_EscWriteWord(sm1Activate,(ESC_SYNCMAN_ACTIVE_OFFSET + SIZEOF_SM_REGISTER));
+..\Ethercat\src\mailbox.c(384): error:  #20: identifier "MEM_ADDR" is undefined
+          
+W_EscReadWord(sm1Activate,(ESC_SYNCMAN_ACTIVE_OFFSET + SIZEOF_SM_REGISTER));
+..\Ethercat\src\mailbox.c(384): error:  #29: expected an expression
+          
+W_EscReadWord(sm1Activate,(ESC_SYNCMAN_ACTIVE_OFFSET + SIZEOF_SM_REGISTER));
+..\Ethercat\src\mailbox.c(386): error:  #29: expected an expression
+          
+W_EscWriteWord(sm1Activate,(ESC_SYNCMAN_ACTIVE_OFFSET + SIZEOF_SM_REGISTER));
+..\Ethercat\src\mailbox.c(701): error:  #20: identifier "MEM_ADDR" is undefined
+      
+W_EscReadWord(mbxLen,u16EscAddrReceiveMbx);
+..\Ethercat\src\mailbox.c(701): error:  #29: expected an expression
+      
+W_EscReadWord(mbxLen,u16EscAddrReceiveMbx);
+..\Ethercat\src\mailbox.c(769): error:  #29: expected an expression
+          
+W_EscReadMbxMem((MEM_ADDR MBXMEM *) psWriteMbx,u16EscAddrReceiveMbx,mbxLen);
+..\Ethercat\src\mailbox.c(769): error:  #29: expected an expression
+          
+W_EscReadMbxMem((MEM_ADDR MBXMEM *) psWriteMbx,u16EscAddrReceiveMbx,mbxLen);
+..\Ethercat\src\mailbox.c(769): error:  #18: expected a ")"
+          
+W_EscReadMbxMem((MEM_ADDR MBXMEM *) psWriteMbx,u16EscAddrReceiveMbx,mbxLen);
+..\Ethercat\src\mailbox.c(775): error:  #29: expected an expression
+          
+W_EscReadWord(smstate,ESC_SYNCMAN_CONTROL_OFFSET);
+..\Ethercat\src\mailbox.c(784): error:  #29: expected an expression
+              
+W_EscReadWord(u16dummy,(u16EscAddrReceiveMbx + u16ReceiveMbxSize - 2));
+..\Ethercat\src\mailbox.c(828): error:  #20: identifier "MEM_ADDR" is undefined
+          
+W_EscWriteMbxMem((MEM_ADDR *)pMbx, u16EscAddrSendMbx, (mbxSize + MBX_HEADER_SIZE));
+..\Ethercat\src\mailbox.c(828): error:  #29: expected an expression
+          
+W_EscWriteMbxMem((MEM_ADDR *)pMbx, u16EscAddrSendMbx, (mbxSize + MBX_HEADER_SIZE));
+..\Ethercat\src\mailbox.c(828): error:  #29: expected an expression
+          
+W_EscWriteMbxMem((MEM_ADDR *)pMbx, u16EscAddrSendMbx, (mbxSize + MBX_HEADER_SIZE));
+..\Ethercat\src\mailbox.c(828): error:  #18: expected a ")"
+          
+W_EscWriteMbxMem((MEM_ADDR *)pMbx, u16EscAddrSendMbx, (mbxSize + MBX_HEADER_SIZE));
+..\Ethercat\src\mailbox.c(834): error:  #29: expected an expression
+          
+W_EscReadWord(smstate,(ESC_SYNCMAN_CONTROL_OFFSET + SIZEOF_SM_REGISTER));
+..\Ethercat\src\mailbox.c(857): error:  #29: expected an expression
+              
+W_EscWriteWord(u16dummy,(u16EscAddrSendMbx + u16SendMbxSize - 2));
+..\Ethercat\src\mailbox.c: 1 warning, 23 errors
+compiling objdef.c...
+..\SYSTEM\sys\sys.h(30): warning:  #47-D: incompatible redefinition of macro "MEM_ADDR" (declared at line 710 of "..\Ethercat\Inc\ecat_def.h")
+  #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\sdoserv.h(618): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO MEM_ADDR      
+ARMEM                aSdoInfoHeader[GET_MEM_SIZE(SDO_INFO_HEADER_BYTE_SIZE)]; /**< \brief SDO Info buffer*/
+..\Ethercat\src\objdef.c(729): warning:  #111-D: statement is unreachable
+          break;
+..\Ethercat\src\objdef.c(890): warning:  #767-D: conversion from pointer to smaller integer
+              if((((
+INT16)pVarPtr) & 0x1) == 0x1)
+..\Ethercat\src\objdef.c(897): error:  #20: identifier "MEM_ADDR" is undefined
+                  pVarPtr = (
+INT16 
+BXMEM *)(((MEM_ADDR)pVarPtr)& ~(MEM_ADDR)0x1);
+..\Ethercat\src\objdef.c(897): error:  #18: expected a ")"
+                  pVarPtr = (
+INT16 
+BXMEM *)(((MEM_ADDR)pVarPtr)& ~(MEM_ADDR)0x1);
+..\Ethercat\src\objdef.c(897): error:  #18: expected a ")"
+                  pVarPtr = (
+INT16 
+BXMEM *)(((MEM_ADDR)pVarPtr)& ~(MEM_ADDR)0x1);
+..\Ethercat\src\objdef.c: 3 warnings, 8 errors
+compiling sdoserv.c...
+..\SYSTEM\sys\sys.h(30): warning:  #47-D: incompatible redefinition of macro "MEM_ADDR" (declared at line 710 of "..\Ethercat\Inc\ecat_def.h")
+  #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
+..\Ethercat\Inc\el9800hw.h(149): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscRead( MEM_ADDR * pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(150): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscReadIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(152): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWrite( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\el9800hw.h(154): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO void HW_EscWriteIsr( MEM_ADDR *pData, UINT16 Address, UINT16 Len );
+..\Ethercat\Inc\sdoserv.h(618): error:  #20: identifier "MEM_ADDR" is undefined
+  
+ROTO MEM_ADDR      
+ARMEM                aSdoInfoHeader[GET_MEM_SIZE(SDO_INFO_HEADER_BYTE_SIZE)]; /**< \brief SDO Info buffer*/
+..\Ethercat\src\sdoserv.c: 1 warning, 5 errors
+"..\OBJ\LED.axf" - 131 Error(s), 13 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   E:\project\STM32F407FreeRTOS_test\USER\RTE
   D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
+Target not created.
 </pre>
 </body>
 </html>

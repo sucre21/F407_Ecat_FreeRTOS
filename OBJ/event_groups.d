@@ -4,7 +4,7 @@
 ..\obj\event_groups.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\event_groups.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\event_groups.o: ..\FreeRTOS\include\FreeRTOSConfig.h
-..\obj\event_groups.o: ..\SYSTEM\sys\sys.h
+..\obj\event_groups.o: ..\SYSTEM\sys.h
 ..\obj\event_groups.o: ..\USER\stm32f4xx.h
 ..\obj\event_groups.o: ..\CORE\core_cm4.h
 ..\obj\event_groups.o: ..\CORE\core_cmInstr.h
@@ -39,7 +39,7 @@
 ..\obj\event_groups.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\event_groups.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\event_groups.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\event_groups.o: ..\SYSTEM\usart\usart.h
+..\obj\event_groups.o: ..\SYSTEM\usart.h
 ..\obj\event_groups.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\event_groups.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\event_groups.o: ..\FreeRTOS\include\portable.h

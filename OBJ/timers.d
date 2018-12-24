@@ -4,7 +4,7 @@
 ..\obj\timers.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\timers.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\timers.o: ..\FreeRTOS\include\FreeRTOSConfig.h
-..\obj\timers.o: ..\SYSTEM\sys\sys.h
+..\obj\timers.o: ..\SYSTEM\sys.h
 ..\obj\timers.o: ..\USER\stm32f4xx.h
 ..\obj\timers.o: ..\CORE\core_cm4.h
 ..\obj\timers.o: ..\CORE\core_cmInstr.h
@@ -39,7 +39,7 @@
 ..\obj\timers.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\timers.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\timers.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\timers.o: ..\SYSTEM\usart\usart.h
+..\obj\timers.o: ..\SYSTEM\usart.h
 ..\obj\timers.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\timers.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\timers.o: ..\FreeRTOS\include\portable.h

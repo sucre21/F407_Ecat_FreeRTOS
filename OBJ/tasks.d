@@ -5,7 +5,7 @@
 ..\obj\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\tasks.o: ..\FreeRTOS\include\FreeRTOSConfig.h
-..\obj\tasks.o: ..\SYSTEM\sys\sys.h
+..\obj\tasks.o: ..\SYSTEM\sys.h
 ..\obj\tasks.o: ..\USER\stm32f4xx.h
 ..\obj\tasks.o: ..\CORE\core_cm4.h
 ..\obj\tasks.o: ..\CORE\core_cmInstr.h
@@ -40,7 +40,7 @@
 ..\obj\tasks.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\tasks.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\tasks.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\tasks.o: ..\SYSTEM\usart\usart.h
+..\obj\tasks.o: ..\SYSTEM\usart.h
 ..\obj\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\tasks.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\tasks.o: ..\FreeRTOS\include\portable.h

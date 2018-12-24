@@ -4,7 +4,7 @@
 ..\obj\list.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\list.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\list.o: ..\FreeRTOS\include\FreeRTOSConfig.h
-..\obj\list.o: ..\SYSTEM\sys\sys.h
+..\obj\list.o: ..\SYSTEM\sys.h
 ..\obj\list.o: ..\USER\stm32f4xx.h
 ..\obj\list.o: ..\CORE\core_cm4.h
 ..\obj\list.o: ..\CORE\core_cmInstr.h
@@ -39,7 +39,7 @@
 ..\obj\list.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\list.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\list.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\list.o: ..\SYSTEM\usart\usart.h
+..\obj\list.o: ..\SYSTEM\usart.h
 ..\obj\list.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\list.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\list.o: ..\FreeRTOS\include\portable.h

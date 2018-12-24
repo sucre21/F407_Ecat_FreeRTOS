@@ -4,7 +4,7 @@
 ..\obj\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\heap_4.o: ..\FreeRTOS\include\FreeRTOSConfig.h
-..\obj\heap_4.o: ..\SYSTEM\sys\sys.h
+..\obj\heap_4.o: ..\SYSTEM\sys.h
 ..\obj\heap_4.o: ..\USER\stm32f4xx.h
 ..\obj\heap_4.o: ..\CORE\core_cm4.h
 ..\obj\heap_4.o: ..\CORE\core_cmInstr.h
@@ -39,7 +39,7 @@
 ..\obj\heap_4.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\heap_4.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\heap_4.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\heap_4.o: ..\SYSTEM\usart\usart.h
+..\obj\heap_4.o: ..\SYSTEM\usart.h
 ..\obj\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\heap_4.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\heap_4.o: ..\FreeRTOS\include\portable.h
