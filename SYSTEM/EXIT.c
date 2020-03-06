@@ -118,8 +118,8 @@ void EXTI9_Configuration(void)
   /* Enable and set EXTI Line0 Interrupt to the lowest priority */
 	//NVIC_PriorityGroupConfig(NVIC_PriorityGroup_9);  				
   NVIC_InitStructure.NVIC_IRQChannel = EXTI9_5_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x01;
-  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x02;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x00;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x01;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
 
@@ -164,7 +164,7 @@ void EXTI12_Configuration(void)
   /* Enable and set EXTI Line0 Interrupt to the lowest priority */
 	//NVIC_PriorityGroupConfig(NVIC_PriorityGroup_10);  				
   NVIC_InitStructure.NVIC_IRQChannel = EXTI15_10_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x02;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x00;
   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x02;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);

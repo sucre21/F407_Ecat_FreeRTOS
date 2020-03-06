@@ -34,7 +34,7 @@ void start_task(void *pvParameters);
 //任务优先级
 #define LED0_TASK_PRIO		2
 //任务堆栈大小	
-#define LED0_STK_SIZE 		50  
+#define LED0_STK_SIZE 		200  
 //任务句柄
 TaskHandle_t LED0Task_Handler;
 //任务函数
@@ -121,9 +121,9 @@ void led0_task(void *pvParameters)
 {
     while(1)
     {
-        //LED0=~LED0;
+        LED0=~LED0;
 			  MainLoop();//主循环程序，查询模式未用
-        //vTaskDelay(500);
+        vTaskDelay(50);
     }
 }   
 
@@ -142,11 +142,11 @@ void led1_task(void *pvParameters)
 //浮点测试任务
 void float_task(void *pvParameters)
 {
-	static float float_num=0.00;
+	//static float float_num=0.00;
 	while(1)
 	{
-		float_num+=0.01f;
-		printf("float_num的值为: %.4f\r\n",float_num);
+		//float_num+=0.01f;
+		//printf("float_num的值为: %.4f\r\n",float_num);
         vTaskDelay(1000);
 	}
 }
